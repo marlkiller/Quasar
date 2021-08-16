@@ -8,6 +8,9 @@
     <InputAssemblies Include="$(TargetDir)Gma.System.MouseKeyHook.dll"/>
     <InputAssemblies Include="$(TargetDir)Quasar.Common.dll"/>
     <InputAssemblies Include="$(TargetDir)BouncyCastle.Crypto.dll"/>
+    <InputAssemblies Include="$(TargetDir)AForge.dll"/>
+    <InputAssemblies Include="$(TargetDir)AForge.Video.dll"/>
+    <InputAssemblies Include="$(TargetDir)AForge.Video.DirectShow.dll"/>
   </ItemGroup>
 
   <ILRepack

@@ -54,6 +54,7 @@ namespace Quasar.Server.Forms
             this.passwordRecoveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.keyloggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.remoteDesktopToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.webcamToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.userSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showMessageboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.remoteDesktopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -259,7 +260,8 @@ namespace Quasar.Server.Forms
             this.surveillanceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.passwordRecoveryToolStripMenuItem,
             this.keyloggerToolStripMenuItem,
-            this.remoteDesktopToolStripMenuItem2});
+            this.remoteDesktopToolStripMenuItem2,
+            this.webcamToolStripMenuItem3});
             this.surveillanceToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.monitoring;
             this.surveillanceToolStripMenuItem.Name = "surveillanceToolStripMenuItem";
             this.surveillanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -288,6 +290,14 @@ namespace Quasar.Server.Forms
             this.remoteDesktopToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.remoteDesktopToolStripMenuItem2.Text = "Remote Desktop";
             this.remoteDesktopToolStripMenuItem2.Click += new System.EventHandler(this.remoteDesktopToolStripMenuItem_Click);
+            // 
+            // webcamToolStripMenuItem3
+            // 
+            this.webcamToolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("webcamToolStripMenuItem3.Image")));
+            this.webcamToolStripMenuItem3.Name = "webcamToolStripMenuItem3";
+            this.webcamToolStripMenuItem3.Size = new System.Drawing.Size(217, 26);
+            this.webcamToolStripMenuItem3.Text = "Webcam";
+            this.webcamToolStripMenuItem3.Click += new System.EventHandler(this.webcamToolStripMenuItem3_Click);
             // 
             // userSupportToolStripMenuItem
             // 
@@ -890,6 +900,7 @@ namespace Quasar.Server.Forms
         private System.Windows.Forms.ToolStripMenuItem webFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem elevateClientPermissionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem remoteDesktopToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem webcamToolStripMenuItem3;
     }
 }
 
