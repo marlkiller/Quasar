@@ -31,11 +31,17 @@ namespace Quasar.Client.Messages
         {
             try
             {
-                List<Tuple<string, string>> lstInfos = new List<Tuple<string, string>>
+                // List<Tuple<string, string>> lstInfos = new List<Tuple<string, string>>
+                // {
+                //     new Tuple<string, string>("client received message", message.msg),
+                // };
+                // client.Send(new GetSayHelloResponse { msgs = lstInfos });
+                //
+                List<string> msgs = new List<string>
                 {
-                    new Tuple<string, string>("client received message", message.msg),
+                    "client received message:"+message.msg,
                 };
-                client.Send(new GetSayHelloResponse { msgs = lstInfos });
+                client.Send(new GetSayHelloResponse { msgs = msgs });
             }
             catch
             {

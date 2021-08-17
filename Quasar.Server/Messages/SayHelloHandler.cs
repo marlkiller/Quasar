@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Quasar.Server.Messages
 {
 
-    public class SayHelloHandler : MessageProcessorBase<List<Tuple<string, string>>>
+    public class SayHelloHandler : MessageProcessorBase<List<string>>
     {
     
         private readonly Client _client;
@@ -34,7 +34,7 @@ namespace Quasar.Server.Messages
 
         public void RefreshSystemInformation(string inputMsg)
         {
-            if (inputMsg == null || inputMsg == "")
+            if (string.IsNullOrEmpty(inputMsg))
             {
                 inputMsg = "msg == null";
             }

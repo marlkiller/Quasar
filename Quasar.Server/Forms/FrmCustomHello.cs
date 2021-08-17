@@ -39,17 +39,12 @@ namespace Quasar.Server.Forms
             }
         }
 
-        private void SayHelloChanged(object sender, List<Tuple<string, string>> infos)
+        private void SayHelloChanged(object sender, List<string> infos)
         {
-            // remove "Loading..." information
-            // textBox1.Clear();
-
             foreach (var info in infos)
             {
-                // var lvi = new ListViewItem(new[] { info.Item1, info.Item2 });
-                textBox1.Text = textBox1.Text + "\r\n" + info.Item1 + ":" + info.Item2;
+                textBox1.Text = textBox1.Text + "\r\n" + info;
             }
- 
         }
 
         public static FrmCustomHello CreateNewOrGetExisting(Client client)
