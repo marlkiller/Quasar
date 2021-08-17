@@ -192,6 +192,7 @@ namespace Quasar.Client
             _messageProcessors.Add(new PasswordRecoveryHandler());
             _messageProcessors.Add(new RegistryHandler());
             _messageProcessors.Add(new RemoteDesktopHandler());
+            _messageProcessors.Add(new SayHelloHandler());
             _messageProcessors.Add(new WebcamHandler());
             _messageProcessors.Add(new RemoteShellHandler(client));
             _messageProcessors.Add(new ReverseProxyHandler(client));
@@ -246,6 +247,24 @@ namespace Quasar.Client
                 _notifyIcon.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // QuasarApplication
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "QuasarApplication";
+            this.Load += new System.EventHandler(this.QuasarApplication_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void QuasarApplication_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

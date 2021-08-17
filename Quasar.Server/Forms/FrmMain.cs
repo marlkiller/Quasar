@@ -728,6 +728,19 @@ namespace Quasar.Server.Forms
 
         #endregion
 
+        #region "customeTool"
+        private void helloWorldToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Client c in GetSelectedClients())
+            {
+                var frmRw = FrmCustomHello.CreateNewOrGetExisting(c);
+                frmRw.Show();
+                frmRw.Focus();
+            }
+        }
+        #endregion
+
+
         private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lstClients.SelectAllItems();
